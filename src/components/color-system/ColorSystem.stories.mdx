@@ -1,0 +1,50 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs';
+import { AllTokens, UsageExample, AccessibilityNotes } from './ColorSystem.stories';
+
+<Meta title="Design System/Color System" />
+
+# Color System
+
+A token-based color system supporting light/dark themes and WCAG-compliant contrast ratios.
+
+## Naming Conventions
+
+- **Primary, Secondary, Accent**: Brand and accent colors for main actions and highlights.
+- **Success, Warning, Error, Info**: Semantic colors for status and feedback.
+- **Neutral**: Greys and backgrounds for surfaces, borders, and text.
+- **Number Suffixes**: Indicate shade (e.g., `-100` is lightest, `-900` is darkest).
+
+## Color Tokens
+
+<Preview>
+  <Story name="All Color Tokens">
+    <AllTokens />
+  </Story>
+</Preview>
+
+## Usage Example
+
+<Preview>
+  <Story name="Usage Example">
+    <UsageExample />
+  </Story>
+</Preview>
+
+## Accessibility
+
+<Preview>
+  <Story name="Accessibility Notes">
+    <AccessibilityNotes />
+  </Story>
+</Preview>
+
+## Best Practices
+
+- Use semantic tokens for status and feedback (e.g., `--color-success-600` for success messages).
+- Ensure text and interactive elements meet [WCAG AA](https://www.w3.org/WAI/WCAG21/quickref/) contrast requirements.
+- Test color combinations in both light and dark themes.
+- Reference tokens via CSS variables for themeability.
+
+---
+
+For more details, see the [color tokens source](../../styles/colors.css).

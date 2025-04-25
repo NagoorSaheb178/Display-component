@@ -1,0 +1,14 @@
+:root {
+  --color-primary-600: #2563eb;
+  --color-secondary-600: #7c3aed;
+  --color-accent-600: #f59e42;
+  --color-success-600: #22c55e;
+  --color-warning-600: #facc15;
+  --color-error-600: #ef4444;
+  --color-info-600: #0ea5e9;
+  /* ...neutral, backgrounds, etc... */
+}
+[data-theme="dark"] {
+  --color-primary-600: #60a5fa;
+  /* ...other dark theme overrides... */
+}
